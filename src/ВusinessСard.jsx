@@ -18,10 +18,10 @@ export const ВusinessСard = () => {
     <Card sx={{ maxWidth: 345, margin: '0 auto', padding: 2 }}>
       <CardContent>
         <Typography variant="h5" component="div" style={{fontWeight: 600}} sx={{ marginBottom: 1 }}>
-          Иван Иван Ромуальдович
+          Иван Иван Отчество
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 0 }} style={{fontWeight: 600}}>
-          A5000 / менеджер кофемашины
+          A5000 / руководитель
         </Typography>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" width="232" height="232" viewBox="0 0 232 232">

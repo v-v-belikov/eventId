@@ -17,10 +17,10 @@ export const ContactCard = () => {
     <Card sx={{ maxWidth: 345, margin: '0 auto', padding: 2 }}>
       <CardContent>
         <Typography variant="h5" component="div" style={{fontWeight: 600}}>
-          Иван Иван Ромуальдович
+          Иван Иван Отчество
         </Typography>
         <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2 }} style={{fontWeight: 600}}>
-          гений
+          руководитель
         </Typography>
         <Button
           variant="contained"

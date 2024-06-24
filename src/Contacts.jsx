@@ -1,11 +1,15 @@
 import React from 'react';
-import { Box, Tabs, Tab, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Avatar, Pagination, Card, Select, FormControl, MenuItem, FormHelperText, InputLabel } from '@mui/material';
+import { Box, Tabs, Tab, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Avatar, Pagination, Card, Select, FormControl, MenuItem, FormHelperText, InputLabel, useMediaQuery } from '@mui/material';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import avatar from "./assets/avatar.png";
 import "./Contacts.css";
+import { useTheme } from '@emotion/react';
 
 export const Contacts = () => {
   const [value, setValue] = React.useState(0);
+  // const theme = useTheme();
+  const isSmallScreen = useMediaQuery('(max-width:600px)');
+
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -28,9 +32,9 @@ export const Contacts = () => {
         <Tab label="Компании" style={{marginRight: "40px"}} color="black"/>
         <Tab label="Посетители" />
       </Tabs>
-      <div style={{display: "flex", justifyContent: "space-between", height: "75px"}}>
-        <div style={{display: "flex", width: "48%", flexDirection: "column"}}>
-          <Box style={{display: "flex"}}>
+      <div style={{display: "flex", justifyContent: "space-between", height: "75px", flexWrap: "wrap", marginBottom: isSmallScreen ? '35px' : '0'}}>
+        <div style={{display: "flex", width: isSmallScreen ? '100%' : '48%', flexDirection: "column", marginBottom: isSmallScreen ? '35px' : '0'}}>
+          <Box style={{display: "flex", ...(isSmallScreen ? {justifyContent: "space-between"} : {})}}>
             <FormControl style={{width: "40%", marginRight: "10px", height: "20px", fontSize: "10px"}}>
               <InputLabel style={{ fontSize: "10px", top: '-5px', left: "-5px"}} id="demo-simple-select-helper-label">Сортировать</InputLabel>
               <Select
@@ -72,17 +76,23 @@ export const Contacts = () => {
             {/* <Select>Сортировать по</Select> */}
           </Box>
         </div>
-        <div style={{display: "flex", width: "48%", flexDirection: "column"}}>
+        <div style={{display: "flex", width: isSmallScreen ? '100%' : '48%', flexDirection: "column"}}>
           <Button variant="contained" startIcon={<EmailOutlinedIcon />} style={{height: "37.5px", fontSize: "10px"}}>
             Экспортировать контакты
           </Button>
         </div>
       </div>
-      <div style={{display: "flex", justifyContent: "space-between"}}>
-        <div style={{display: "flex", width: "48%", flexDirection: "column"}}>
+      <div 
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          flexWrap: "wrap",
+        }}
+      >
+        <div style={{display: "flex", width: isSmallScreen ? '100%' : '48%', flexDirection: "column"}}>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
@@ -93,7 +103,7 @@ export const Contacts = () => {
           </Paper>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
@@ -104,7 +114,7 @@ export const Contacts = () => {
           </Paper>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
@@ -115,7 +125,7 @@ export const Contacts = () => {
           </Paper>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
@@ -126,7 +136,7 @@ export const Contacts = () => {
           </Paper>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
@@ -136,10 +146,10 @@ export const Contacts = () => {
             <img src={avatar} width="40px" style={{}}/>
           </Paper>
         </div>
-        <div style={{display: "flex", width: "48%", flexDirection: "column"}}>
+        <div style={{display: "flex", width: isSmallScreen ? '100%' : '48%', flexDirection: "column"}}>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
@@ -150,7 +160,7 @@ export const Contacts = () => {
           </Paper>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
@@ -161,7 +171,7 @@ export const Contacts = () => {
           </Paper>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
@@ -172,7 +182,7 @@ export const Contacts = () => {
           </Paper>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
@@ -183,7 +193,7 @@ export const Contacts = () => {
           </Paper>
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
-              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Харьковская Вероника</div>
+              <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
               <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
             </div>
             <div style={{marginRight: "15px"}}>
