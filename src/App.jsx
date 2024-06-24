@@ -50,7 +50,7 @@ function App() {
      
     {isSmallScreen && isOpened
       ? (
-        <div style={{position: "fixed", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: "rgb(25, 118, 210)", display: "flex", flexDirection: "column", alignItems: "flex-start"}}>
+        <div style={{zIndex: 999999, position: "fixed", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: "rgb(25, 118, 210)", display: "flex", flexDirection: "column", alignItems: "flex-start"}}>
           <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => setIsOpened(false)}>Закрыть меню</Button>
           <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => setSelectedPage("businessCard")}>Визитка</Button>
           <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => setSelectedPage("contacts")}>Контакты</Button>
