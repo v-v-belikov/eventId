@@ -52,10 +52,22 @@ function App() {
       ? (
         <div style={{zIndex: 999999, position: "fixed", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: "rgb(25, 118, 210)", display: "flex", flexDirection: "column", alignItems: "flex-start"}}>
           <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => setIsOpened(false)}>Закрыть меню</Button>
-          <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => setSelectedPage("businessCard")}>Визитка</Button>
-          <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => setSelectedPage("contacts")}>Контакты</Button>
-          <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => setSelectedPage("contactCard")}>Карточка контакта</Button>
-          <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => setSelectedPage("webEngineer")}>Веб-инженер</Button>
+          <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => {
+            setSelectedPage("businessCard")
+            setIsOpened(false)
+            }}>Визитка</Button>
+          <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => {
+            setSelectedPage("contacts")
+            setIsOpened(false)
+          }}>Контакты</Button>
+          <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => {
+            setSelectedPage("contactCard")
+            setIsOpened(false)
+          }}>Карточка контакта</Button>
+          <Button sx={{ my: 2, color: 'white', display: 'block' }} onClick={() => {
+            setSelectedPage("webEngineer")
+            setIsOpened(false)
+          }}>Веб-инженер</Button>
         </div>
       ): null}
       <Box sx={{ textAlign: 'center', marginBottom: 5, marginTop: "35px"}}>
