@@ -93,7 +93,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
@@ -104,7 +104,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
@@ -115,7 +115,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
@@ -126,7 +126,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
@@ -137,7 +137,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
@@ -150,7 +150,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
@@ -161,7 +161,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
@@ -172,7 +172,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
@@ -183,7 +183,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
@@ -194,7 +194,7 @@ export const Contacts = () => {
           <Paper style={{display: "flex", alignItems: "center", padding: "10px", marginBottom: "10px"}} elevation={3} square={false} >
             <div style={{marginRight: "25px"}}>
               <div style={{fontSize: "12px", fontWeight: 600, textAlign: "left"}}>Иван Иван тест</div>
-              <div style={{fontSize: "10px", textAlign: "left"}}>Русский стандарт</div>
+              <div style={{fontSize: "10px", textAlign: "left"}}>А5000</div>
             </div>
             <div style={{marginRight: "15px"}}>
               <div style={{fontSize: "10px"}}>21.06.2022</div>
